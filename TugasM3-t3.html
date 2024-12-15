@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Selamat datang di Hotel Santika, tempat terbaik untuk menginap.">
+    <meta name="keywords" content="hotel, penginapan, fasilitas, kolam renang, pusat kebugaran">
+    <title>Hotel Santika</title>
+    <style>
+        header {
+            background-color: white;
+            color: black;
+            padding: 5px;
+            display: flex;
+            justify-content: space-between; 
+            align-items: center; 
+        }
+        nav {
+            position: relative; 
+            z-index: 1; 
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: gray;
+        }
+
+        nav ul li {
+            display: inline-block;
+            position: relative;
+
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 10px;
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+            color: white;
+        }
+
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: darkgray;
+        }
+
+        nav ul li:hover ul {
+            display: block;
+        }
+
+        nav ul li ul li ul {
+            left: 100%;
+            top: 0;
+        }
+
+
+        
+        .container {
+            display: flex;
+            margin: 20px;
+            background-color: #555;
+        }
+
+        .leftbar {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .content {
+            flex: 3;
+            padding: 10px;
+        }
+
+        
+        footer {
+            background-color: gray;
+            color: black;
+            text-align: center;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        img {
+            max-width: 100%;
+            height: 50px;
+            width: 50px;
+            margin: 10px;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 50.00%; 
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background-color: bisque;
+            padding: 100px;
+            border-radius: 10px;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+
+       
+       .content {
+            flex: 3;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr); 
+        }
+
+        .content img {
+            width: 300px;
+            height: 180px;
+            border-radius: 8px; 
+            
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Hotel Santika</h1>
+        <img src="/Web1-Apryan/Modul1/gambar/Logo HS.jpeg" alt="Logo Hotel Santika" class="header-image" height="250px" width="250px"> 
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Kamar</a></li>
+            <li>
+                <a href="#">Fasilitas</a>
+                <ul>
+                    <li><a href="#">Petualangan Alam</a></li>
+                    <li>
+                        <a href="#">Kolam Renang</a>
+                        <ul>
+                            <li><a href="#">Sumber Air Panas</a></li>
+                            <li>
+                                <a href="#">Kolam Anak & Dewasa</a>
+                                <ul>
+                                    <li><a href="#">Reguler</a></li>
+                                    <li><a href="#">Premium</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Pusat Kebugaran</a></li>
+                    <li><a href="#">Ruang Rapat</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Pesan Sekarang</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Left Sidebar: Video using iframe -->
+        <div class="leftbar">
+            <!-- Tambahkan Video YouTube disini -->
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/ZbETVFa-Srs" title="Video YouTube" ></iframe>
+            </div>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/6SQ8b8lbFg8" title="Video YouTube" ></iframe>
+            </div>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/21Su5vffMZU" title="Video YouTube"></iframe>
+            </div>
+        </div>
+
+        <!-- Tambahkan Foto disini -->
+        <div class="content">
+            <img src="/gambar/Kamar (1).jpeg" alt="Kamar 1">
+            <img src="/gambar/kamar 2.jpeg" alt="Kamar 2">
+            <img src="/gambar/Kamar 3.jpeg" alt="Kamar 3">
+            <img src="/gambar/Kamar 4.jpeg" alt="Kamar 4">
+            <img src="/gambar/kamar 5.jpeg" alt="Kamar 5">
+            <img src="/gambar/kamar 6.jpeg" alt="Kamar 6">
+            <img src="/gambar/images (2).jpeg" alt="Kamar 7">
+            <img src="/gambar/images (3).jpeg" alt="Kamar 8">
+            <img src="/gambar/images (4).jpeg" alt="Kamar 9">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 Hotel Santika
+    </footer>
+
+</body>
+</html>
